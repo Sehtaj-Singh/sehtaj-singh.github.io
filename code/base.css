@@ -5,6 +5,20 @@
 html {
   scroll-behavior: smooth;
 }
+a,
+button {
+  -webkit-tap-highlight-color: transparent; /* Mobile tap flash */
+  outline: none;
+}
+
+a:focus,
+a:active,
+button:focus,
+button:active {
+  outline: none;
+  box-shadow: none;
+}
+
 
 * {
   margin: 0;
@@ -14,7 +28,8 @@ html {
 #ribb-wrap {
   display: flex;
   justify-content: center;
-  margin-top: 2vh;
+  margin-top: 5vh;
+  margin-bottom: 3vh;
 }
 
 .section-heading {
@@ -103,30 +118,31 @@ html {
 /* Laptop / Desktop */
 @media (min-width: 1030px) {
   #ribbon-left {
-    margin-right: -18px;
+    margin-right: -13px;
     margin-top: -2vh;
     width: 10vw;
+    height: 8.5vh;
     clip-path: polygon(100% 0, 60% 50%, 75% 100%, 0 100%, 12% 0);
   }
 
   #ribbon-right {
-    margin-left: -18px;
+    margin-left: -13px;
     width: 10vw;
-    height: 5vh;
+    height: 8.5vh;
     top: 2vh;
     clip-path: polygon(100% 0, 55% 50%, 75% 100%, 0 100%, 12% 0);
   }
 
   .heading-solid {
-    font-size: 3.5vh;
+    font-size: 4.5vh;
     clip-path: polygon(4% 0, 100% 0, 96% 100%, 0% 100%);
     width: 30vw;
     letter-spacing: 4px;
     z-index: 3;
     line-height: 1;
-    padding: 1vh 0;
+    padding: 2vh 0;
   }
   #ribb-wrap {
-    margin: 7vh 0;
+    margin: 15vh 0;
   }
 }

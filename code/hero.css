@@ -116,7 +116,7 @@
 
 
 /* Tablet and up (768px and above) */
-@media (min-width: 768px) and (max-width: 1279px) {
+@media (min-width: 768px)  {
   .hero img {
     position: absolute;
     width: 30vw;
@@ -160,39 +160,40 @@
 
 
 /* Laptop / Desktop */
-@media (min-width: 1280px) {
+@media (min-width: 1024px) {
 .intro{
   display: flex;
   gap: 10vw;
 }
 .hero {
-  width: 35vw;
-  height: 70vh;
+  width: 30vw;
+  height: 95vh;
 }
 
 #info {
   width: 55vw;
 }
 #para{
+  font-size: 30px;
   width: 35vw;
 }
 .hero img{
-  width: 20vw;
-  margin-left: 27vw;
-  margin-bottom: 18vh;
+  width: 23vw;
+  margin-left: 23vw;
+  margin-top: 18vh;
 }
 #t{
   margin-top: 15vh;
-   font-size: 5vh;
+   font-size: 7vh;
 }
 #t2{
-  font-size: 7vh;
+  font-size: 8vh;
 }
 .social-icons{
-  font-size: 40px;
+  font-size: 47px;
 }
 #go{
-   padding: 0.5vh 1vw;
+   padding: 1vh 2vw;
    width: 5vw;
    margin-top: 4vh;
 }
@@ -207,43 +208,4 @@
 }
 }
 
-
-/* TABLET LANDSCAPE */
-@media (min-width: 768px) and (max-width: 1365px) and (orientation: landscape) {
-.intro{
-  display: flex;
-  gap: 10vw;
-}
-.hero {
-  width: 35vw;
-  height: 70vh;
-}
-
-#info {
-  width: 55vw;
-}
-#para{
-  width: 35vw;
-}
-.hero img{
-  width: 25vw;
-  margin-left: 29vw;
-  margin-top: 13vh;
-}
-#t{
-  margin-top: 15vh;
-   font-size: 5vh;
-}
-#t2{
-  font-size: 7vh;
-}
-.social-icons{
-  font-size: 40px;
-}
-#go{
-   padding: 0.5vh 1vw;
-   width: 5vw;
-   margin-top: 4vh;
-}
-}
 

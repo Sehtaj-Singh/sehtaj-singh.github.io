@@ -118,6 +118,9 @@
   .copyright-bar {
     font-size: 1.5rem;
   }
+  .contact-title h2{
+    font-size: 6vh;
+  }
 }
 
 /* TABLET LANDSCAPE */

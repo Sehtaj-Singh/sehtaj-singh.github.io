@@ -9,11 +9,12 @@
   display: flex;
   gap: 4vw;
   border-radius: 18px;
+  text-decoration: none;
+  margin-bottom: 3vh;
 }
 
 .project-image {
   width: 35vw;
-  background-color: #f5f7f9;
   padding: 2vh 3vw;
   border-bottom-left-radius: 18px;
   border-top-left-radius: 18px;
@@ -31,7 +32,7 @@
   padding: 2vh 3vw;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .project-data h3 {
@@ -47,6 +48,7 @@
   font-family: "Inika", serif;
   overflow: hidden;
   display: -webkit-box;
+  color: #222;
   line-clamp: 6;
   -webkit-line-clamp: 6;
   -webkit-box-orient: vertical;
@@ -74,7 +76,7 @@
   letter-spacing: 1px;
   font-size: 1.8vh;
   padding: 0.7vh 3vw;
-  background: linear-gradient(to right, #0a3d62, #0c4b7a);
+   background: linear-gradient(135deg, #34d399, #059669);
   color: #fff;
   border-radius: 14px;
   font-family: "Inika", serif;
@@ -111,58 +113,48 @@
 }
 
 /* Laptop / Desktop */
-@media (min-width: 1280px) {
-  .project-image {
-    padding: 2.5vh 4vw;
-  }
-  .project-data {
-    padding:4vh 4vw;
-  }
-  .project-data h3 {
-    font-size: 7vh;
-  }
-  .project-data p {
-    font-size: 23px;
-    width: 90%;
-    line-clamp: 10;
-    -webkit-line-clamp: 10;
-  }
-  #card-spans {
-    gap: 10vw;
-  }
-  .project-image img{
-    height: 45vh;
-    object-fit: cover;
-    object-position: top;
-  }
-  .project-image{
-    height: 45vh;
-  }
-  #project-card {
-    width: 88vw;
-    margin-left: 6vw;
-  }
+@media (min-width: 1024px) {
+  
+  #projects-list{
+  display:grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap:3vw;
+  width:92vw;
+  margin-left:3vw;
+}
+
+#project-card{
+  width:100%;
+  margin:0;
+  gap: 2vw;
+}
+
+.project-image{
+  width:50%;
+  padding: 2vh 2vw;
+}
+
+.project-data{
+  width:90%;
+  padding: 2vh 2vw;
+}
+
+.project-data h3{
+  font-size: 6vh;
+}
+.project-data p{
+  font-size: 26px;
+  line-clamp:8;
+  -webkit-line-clamp: 8;
+}
+#status {
+   font-size: 2.5vh;
+}
+#project-section {
+  margin-bottom: 12vh;
+}
+  
 }
 
 
 
-/* TABLET LANDSCAPE */
-@media (min-width: 768px) and (max-width: 1365px) and (orientation: landscape) {
- .project-data h3{
-  font-size: 8vh;
- }
- #button {
-  padding: 2vh 3vw;
-  font-size: 3vh;
- }
- #status{
-  padding: 2vh 3vw;
-  font-size: 3vh;
- }
- .project-data{
-  padding: 5vh 3vw;
- }
- .project-image{
-  padding: 5vh 3vw;
- }
-}

@@ -76,7 +76,7 @@
 
 .go-work {
   display: flex;
-  gap: 6vw;
+  gap: 8vw;
   justify-content: center;
   margin-top: 2vh;
 }
@@ -90,7 +90,9 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  transition: transform 0.25s ease, opacity 0.25s ease;
+  transition:
+    transform 0.25s ease,
+    opacity 0.25s ease;
 }
 
 .work-item img {
@@ -187,7 +189,8 @@
   width: calc(var(--val) * 1%);
   border-radius: calc(var(--height) / 2);
   background: linear-gradient(90deg, var(--start-color), var(--end-color));
-  box-shadow: 0 4px 14px var(--shadow-color),
+  box-shadow:
+    0 4px 14px var(--shadow-color),
     inset 0 1px 0 rgba(255, 255, 255, 0.35);
   transition: width 150ms linear;
   will-change: width;
@@ -265,121 +268,110 @@
 
 /* Tablet */
 @media (min-width: 768px) and (max-width: 1279px) {
-.ui-card{
-  width: 84vw;
-   margin-left: 5vw;
-}
-.top-section .logos img {
-  width: 6vw;
-}
-.top-section h3{
-  font-size: 2.4vh;
-  width: 70%;
-  margin-left: 15%
-}
-.skill-row{
-  gap: 32px;
-  padding-left: 6vw;
-  margin: 30px 0;
-  padding-right: 6vw;
-}
-.skill-logo img {
-  width: 5vw;
-}
-.skill-progress-wrapper{
-  gap: 5vw;
-}
-.skill-name{
-  font-size: 20px;
-}
-.skill-percent{
-  font-size: 20px;
-}
-.work-item img{
-  width: 5vw;
-}
-
+  .ui-card {
+    width: 84vw;
+    margin-left: 5vw;
+  }
+  .top-section .logos img {
+    width: 6vw;
+  }
+  .top-section h3 {
+    font-size: 2.4vh;
+    width: 70%;
+    margin-left: 15%;
+  }
+  .skill-row {
+    gap: 32px;
+    padding-left: 6vw;
+    margin: 30px 0;
+    padding-right: 6vw;
+  }
+  .skill-logo img {
+    width: 5vw;
+  }
+  .skill-progress-wrapper {
+    gap: 5vw;
+  }
+  .skill-name {
+    font-size: 20px;
+  }
+  .skill-percent {
+    font-size: 20px;
+  }
+  .work-item img {
+    width: 5vw;
+  }
 }
 
 /* Laptop / Desktop */
 @media (min-width: 1280px) {
- #skill-row-desk{
-  display: flex;
- }
- .top-section .logos img {
-  width: 3vw;
-}
-.skill-logo img {
-  width: 3vw;
-}
-.logos {
-  right: 5vw;
-  display: flex;
-  gap: 3vw;
-}
+  .ui-card{
+    width: 40vw;
+  }
+  #skill-row-desk {
+    display: flex;
+  }
+  .top-section .logos img {
+    width: 3vw;
+  }
+  .skill-logo img {
+    width: 2.5vw;
+  }
+  .logos {
+    right: 5vw;
+    display: flex;
+    gap: 3vw;
+  }
+  .top-section h3{
+    margin-top: 4vh;
+    font-size: 3vh;
+  }
 
-#border{
-  top: 9vh;
-  font-size: 5vh;
-  left: 6vw;
-}
-.work-item img{
-  width: 3vw;
-}
-.skill-row{
-   gap: 32px;
-  margin: 30px 0;
-}
-.skill-progress-wrapper{
-  gap: 2vw;
-}
-.top-section{
-  padding-top: 12vh;
-}
-
+  #border {
+    top: 9vh;
+    font-size: 5vh;
+    left: 6vw;
+  }
+  .work-item img {
+    width: 3vw;
+  }
+  .skill-row {
+    gap: 32px;
+    margin: 45px 0;
+  }
+  .skill-progress-wrapper {
+    gap: 2vw;
+  }
+  .top-section {
+    padding-top: 12vh;
+  }
+  .go-work {
+    margin-top: 3vh;
+  }
+  .skill-name {
+    font-size: 24px;
+  }
+  .skill-percent {
+    font-size: 24px;
+  }
+  .bottom-head h3{
+     font-size: 4vh;
+     margin-top: 4vh;
+  }
 }
 
 /* MOBILE LANDSCAPE */
 @media (max-width: 899px) and (orientation: landscape) {
-  #border{
+  #border {
     font-size: 15vh;
     top: 6vh;
   }
-  .top-section{
+  .top-section {
     padding-top: 30vh;
   }
 }
-
 
 /* TABLET LANDSCAPE */
 @media (min-width: 768px) and (max-width: 1365px) and (orientation: landscape) {
   /* tablet landscape layout (almost desktop) */
 }
-
-
-/* TABLET LANDSCAPE */
-@media (min-width: 768px) and (max-width: 1365px) and (orientation: landscape) {
- #border {
-  font-size: 8vh;
-  top: 6vh;
- }
- .top-section{
-  padding-top: 20vh;
- }
- .top-section h3{
-  font-size: 4vh;
- }
- .skill-row {
-  padding-left: 10vw;
-  padding-right: 4vw;
-  margin: 35px 0;
- }
- .skill-name {
-  font-size: 28px;
- }
- .skill-percent{
-  font-size: 28px;
- }
-}
-
-

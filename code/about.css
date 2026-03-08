@@ -115,7 +115,6 @@
 
 #about-go-para {
   font-size: 1.5vh;
-  
   text-align: center;
   font-family: "Inter", sans-serif;
   text-decoration: none;
@@ -187,6 +186,10 @@
 .A-para,
 .B-para {
   width:48vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 
@@ -194,7 +197,6 @@
   font-family: "Yanone Kaffeesatz", sans-serif;
   font-size: 3.5vh;
   text-align: center;
-  
   letter-spacing: 1px;
   margin-top: 4vh;
   margin-bottom: 1.5vh;
@@ -204,7 +206,6 @@
   font-family: "Yanone Kaffeesatz", sans-serif;
   font-size: 3.5vh;
   text-align: center;
-  margin-right: 5vw;
   letter-spacing: 1px;
   margin-top: 3vh;
   margin-bottom: 1.5vh;
@@ -215,7 +216,6 @@
   text-align: center;
   font-family: "Inika", serif;
   width: 45vw;
-  margin-right: 2.5vw;
   font-size: 13px;
 }
 
@@ -223,7 +223,6 @@
   text-align: center;
   font-family: "Inika", serif;
   width: 43vw;
-  margin-left: 2.5vw;
   font-size: 13px;
 }
 
@@ -247,7 +246,7 @@
 }
 
 /* Tablet */
-@media (min-width: 768px) and (max-width: 1279px) {
+@media (min-width: 768px)  {
 #type-line1{
   font-size: 2.8rem;
   line-height: 1.2;
@@ -304,113 +303,109 @@
 
 
 /* Laptop / Desktop */
-@media (min-width: 1280px) {
+@media (min-width: 1024px) {
 .roles-block{
    height: 2.8rem;
+   font-size: 14px;
 }
-#type-line1{
-  font-size: 2.8rem;
-  margin-left: 10%;
+#about{
+  display: flex;
+  margin-bottom: 15vh;
+}
+#about-first{
+  width: 50vw;
+}
+#about-back{
+  width: 52vw;
+}
+.about-pro{
+  width: 35vw;
+  margin-left: 5vw;
+}
+
+ #type-line1{
+  font-size: 2.6rem;
   line-height: 1.2;
   letter-spacing: 3px;
 }
-.front-left img {
-  width: 80%;
-  margin-left: 10%;
-  margin-top: 1vh;
-}
-.front-right img {
-  width: 80%;
-  margin-left: 10%;
-}
-#about-go{
-margin-left: 10%;
-font-size: 2.5vh;
-}
-.about-pro{
-  display: flex;
-  margin-bottom: 8vh;
-}
-#about-back{
-  height: 40vh;
-  margin-top: -27vh;
-}
-.about-pro-tag{
-  width: 30vw;
+#about-go-para{
+  width: 15vw;
 }
 #about-max{
-   gap: 2vw;
+  margin-top: 2vh;
 }
-.about-pro-para{
-  width: 20vw;
+
+.about-pro-para p{
+ width: 25vw;
+ font-size: 26px;
 }
-.about-down{
-  border-top: none;
-  padding: 2vh 0;
-  border-left: 1px solid #4c4742;;
+#about-max{
+width: 40vw;
 }
 .about-pro-tag h3,
 .about-pro-tag h2{
+  width: 10vw;
   font-size: 5vh;
 }
 .about-pro-tag h1{
+  width: 10vw;
   font-size: 7vh;
 }
-#about-go-para{
-  width: 4vw;
-  margin-bottom: 11vh;
+.about-pro-tag{
+  width: 10vw;
 }
-.about-down{
-  margin-left: 5vw;
-}
-.about-pro-para p{
-  font-size: 18px;
+.about-down {
+  width: 40vw;
+  margin-left: 0vw;
+  margin-bottom: 0;
 }
 .about-down h2{
-  font-size: 3vh;
-  width: 70%;
+  width: 30vw;
+}
+
+/* ========service====== */
+#service-images{
+  display: flex;
+  gap: 2.5vw;
+}
+.section-one,.section-two {
+  width: 50vw;
 }
 #one-A{
-  width: 42vw;
-  margin-left: 5vw;
-  margin-right: 5vw;
+  width: 25vw;
 }
-#one-B {
-  width: 42vw;
-  margin-left: 5vw;
-  margin-right: 5vw;
+#one-B{
+  width: 25vw;
+  
 }
-.B-para h3{
-  font-size: 8vh;
-}
-.A-para h3{
-  font-size: 8vh;
-}
-.A-para p{
-  width: 35vw;
-  font-size: 22px;
-  margin-top: 4vh;
-}
-.B-para p{
-  width: 35vw;
-  font-size: 22px;
-  margin-top: 4vh;
-}
-.A-para{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+.A-para,
+.B-para {
+  width:22vw;
+  
 }
 .B-para{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  margin-left: 2vw;
 }
+.A-para p,
+.B-para p{
+width:21vw;
+font-size: 26px;
+}
+.section-two{
+  flex-direction: row-reverse;
+  margin-right: 3vw;
+}
+.A-para h3,.B-para h3{
+   font-size: 6.5vh;
+}
+
 .section-three{
-    width: 90vw;
-    margin-left: 5vw;
+  aspect-ratio: auto;
+  height: 80vh;
+  background-position: top;
+  width: 90vw;
+  margin-left: 5vw;
+  margin-top: 15vh;
 }
 .section-three h3{
   font-size: 8vh;
@@ -436,66 +431,3 @@ font-size: 2.5vh;
 }
 
 
-/* TABLET LANDSCAPE */
-@media (min-width: 768px) and (max-width: 1365px) and (orientation: landscape) {
-  #type-line1{
-    font-size: 3.5rem;
-  }
-  .roles-block{
-    height: 3.5rem;
-  }
-  #about-go{
-    font-size: 3.5vh;
-  }
-  .about-pro-tag h3,
-.about-pro-tag h2{
-  font-size: 7vh;
-}
-.about-pro-tag h1{
-  font-size: 9vh;
-}
-#about-max{
-   margin-top: 10vh;
-}
-#about-back{
-    height:40vh;
-    margin-top: -27vh;
-}
-.about-down h2{
-  font-size: 5vh;
-}
-.about-down i{
-  font-size: 5vh;
-}
-#one-A{
-  width: 44vw;
-  margin-left: 4vw;
-}
-#one-B{
-  width: 44vw;
-  margin-left: 4vw;
-}
-.B-para h3{
-  font-size: 9vh;
-  margin-top: 10vh;
-}
-.A-para h3{
-  font-size: 9vh;
-  margin-top: 10vh;
-}
-.A-para p{
-  font-size: 30px;
-  margin-top: 5vh;
-}
-.B-para p{
-  font-size: 30px;
-  margin-top: 5vh;
-}
-.section-three{
-   width: 90vw;
-   margin-left: 5vw;
-}
-.section-three h3{
-  font-size: 9vh;
-}
-}
