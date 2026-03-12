@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://sehtaj-singh.github.io/sitemap.xml
