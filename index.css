@@ -253,14 +253,14 @@ button:active {
   display: block;
 }
 .social-icon {
-  width:32px;
-  height:32px;
+  width:28px;
+  height:28px;
   color: #76563f;
 }
 
  .insta{
-  width:36px;
-  height:36px;
+  width:32px;
+  height:32px;
 }
 
 .social-icons a:hover svg {
