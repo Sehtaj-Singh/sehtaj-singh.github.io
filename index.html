@@ -4,16 +4,29 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Sehtaj Singh - Portfolio</title>
+  <title>Sehtaj Singh | Web Developer </title>
 
   <meta name="description"
     content="I am Sehtaj Singh, a web developer who designs and builds modern responsive websites with clean user experiences, frontend interfaces, and reliable backend systems. Explore my projects and development work.">
 
   <meta name="google-site-verification" content="vmW0EGhT3kM_Slb7tsK8_4tkdPiCwYGxfwY4lfBLwFg" />
 
+  <meta name="author" content="Sehtaj Singh">
   <link rel="canonical" href="https://sehtaj-singh.github.io/">
-
   <meta name="robots" content="index, follow">
+
+  <!-- CSS (order matters) -->
+  <link rel="preload" href="index.css" as="style" onload="this.rel='stylesheet'">
+  <link rel="preload" href="footer.css" as="style" onload="this.rel='stylesheet'">
+  <link rel="preload" as="image" href="assets/test16.webp">
+
+  <link rel="stylesheet" href=./main.css>
+
+  <noscript>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="footer.css">
+  </noscript>
+
 
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-C3YY8WH156"></script>
@@ -25,30 +38,32 @@
     gtag('config', 'G-C3YY8WH156');
   </script>
 
-  <!-- Tab icons (desktop + mobile) -->
   <!-- Favicon -->
   <link rel="icon" type="image/x-icon" href="favicon.ico">
   <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
   <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
 
-
   <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Inika:wght@400;700&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap"
-    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-  <!-- CSS (order matters) -->
-  <link rel="stylesheet" href="code/index.css">
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" as="style"
+    onload="this.onload=null;this.rel='stylesheet'">
 
-  <!-- Font Awesome (self-hosted) -->
-  <link rel="stylesheet" href="icons/css/fontawesome.min.css">
-  <link rel="stylesheet" href="icons/css/solid.min.css">
-  <link rel="stylesheet" href="icons/css/brands.min.css">
+  <link rel="preload"
+    href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@300;400;500;600;700&display=swap" as="style"
+    onload="this.onload=null;this.rel='stylesheet'">
 
-  <link rel="preload" href="icons/webfonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="icons/webfonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap" as="style"
+    onload="this.onload=null;this.rel='stylesheet'">
+
+  <noscript>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap">
+    <link rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@300;400;500;600;700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap">
+  </noscript>
 
   <!-- Open Graph SEO -->
   <meta property="og:title" content="Sehtaj Singh | Web Developer Portfolio">
@@ -71,14 +86,19 @@
   <header class="head">
     <h1>Sehtaj Singh</h1>
     <button class="menu-btn" aria-label="Open menu" aria-expanded="false" aria-controls="sideModal">
-      <i class="fa-solid fa-bars" aria-hidden="true"></i>
+      <svg class="menu-icon" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+        stroke-width="2">
+        <line x1="3" y1="6" x2="21" y2="6"></line>
+        <line x1="3" y1="12" x2="21" y2="12"></line>
+        <line x1="3" y1="18" x2="21" y2="18"></line>
+      </svg>
     </button>
   </header>
 
   <main>
     <section class="intro">
 
-      <section class="hero" aria-label="Hero">
+      <section class="hero" width="400" height="400" aria-label="Hero">
         <img src="assets/test16.webp" alt="Sehtaj Singh Web Developer Portfolio" fetchpriority="high" decoding="async">
       </section>
 
@@ -87,26 +107,38 @@
         <h2 id="t2">SEHTAJ SINGH</h2>
 
         <p id="para">
-          I love designing and building custom websites, creating clean user experiences with a blend of frontend and
-          backend development. I enjoy crafting modern interfaces, and turning concepts into functional, visually
-          appealing digital work.
+          Designing and building custom websites with clean user experiences through a blend of frontend and backend
+          development. Focused on crafting modern interfaces and turning concepts into functional, visually appealing
+          digital work.
         </p>
 
         <div class="social-icons">
           <a href="https://wa.me/919992715254" target="_blank" aria-label="WhatsApp">
-            <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+            <svg class="social-icon" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 432 432">
+              <path fill="currentColor"
+                d="M364.5 65Q427 127 427 214.5T364.5 364T214 426q-54 0-101-26L0 429l30-109Q2 271 2 214q0-87 62-149T214 3t150.5 62zM214 390q73 0 125-51.5T391 214T339 89.5T214 38T89.5 89.5T38 214q0 51 27 94l4 6l-18 65l67-17l6 3q42 25 90 25zm97-132q9 5 10 7q4 6-3 25q-3 8-15 15.5t-21 9.5q-18 2-33-2q-17-6-30-11q-8-4-15.5-8.5t-14.5-9t-13-9.5t-11.5-10t-10.5-10.5t-8.5-9.5t-7-8.5t-5.5-7t-3.5-5L128 222q-22-29-22-55q0-24 19-44q6-7 14-7q6 0 10 1q8 0 12 9q2 3 6 13l7 17.5l3 8.5q3 5 1 9q-3 7-5 9l-3 3l-3 3.5l-2 2.5q-6 6-3 11q13 22 30 37q13 11 43 26q7 3 11-1q12-15 17-21q4-6 12-3q6 3 36 17z" />
+            </svg>
           </a>
 
           <a href="https://www.facebook.com/SehtajM49" target="_blank" aria-label="Facebook">
-            <i class="fa-brands fa-facebook-f" aria-hidden="true"></i>
+            <svg class="social-icon" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 224 432">
+              <path fill="currentColor"
+                d="M145 429H66V235H0v-76h66v-56q0-48 27-74t72-26q36 0 59 3v67l-41 1q-22 0-30 9t-8 27v49h76l-10 76h-66v194z" />
+            </svg>
           </a>
 
           <a href="https://www.instagram.com/sehtaj_m49/" target="_blank" aria-label="Instagram">
-            <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+            <svg class="social-icon insta" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24">
+              <path fill="currentColor"
+                d="M17.34 5.46a1.2 1.2 0 1 0 1.2 1.2a1.2 1.2 0 0 0-1.2-1.2Zm4.6 2.42a7.59 7.59 0 0 0-.46-2.43a4.94 4.94 0 0 0-1.16-1.77a4.7 4.7 0 0 0-1.77-1.15a7.3 7.3 0 0 0-2.43-.47C15.06 2 14.72 2 12 2s-3.06 0-4.12.06a7.3 7.3 0 0 0-2.43.47a4.78 4.78 0 0 0-1.77 1.15a4.7 4.7 0 0 0-1.15 1.77a7.3 7.3 0 0 0-.47 2.43C2 8.94 2 9.28 2 12s0 3.06.06 4.12a7.3 7.3 0 0 0 .47 2.43a4.7 4.7 0 0 0 1.15 1.77a4.78 4.78 0 0 0 1.77 1.15a7.3 7.3 0 0 0 2.43.47C8.94 22 9.28 22 12 22s3.06 0 4.12-.06a7.3 7.3 0 0 0 2.43-.47a4.7 4.7 0 0 0 1.77-1.15a4.85 4.85 0 0 0 1.16-1.77a7.59 7.59 0 0 0 .46-2.43c0-1.06.06-1.4.06-4.12s0-3.06-.06-4.12ZM20.14 16a5.61 5.61 0 0 1-.34 1.86a3.06 3.06 0 0 1-.75 1.15a3.19 3.19 0 0 1-1.15.75a5.61 5.61 0 0 1-1.86.34c-1 .05-1.37.06-4 .06s-3 0-4-.06a5.73 5.73 0 0 1-1.94-.3a3.27 3.27 0 0 1-1.1-.75a3 3 0 0 1-.74-1.15a5.54 5.54 0 0 1-.4-1.9c0-1-.06-1.37-.06-4s0-3 .06-4a5.54 5.54 0 0 1 .35-1.9A3 3 0 0 1 5 5a3.14 3.14 0 0 1 1.1-.8A5.73 5.73 0 0 1 8 3.86c1 0 1.37-.06 4-.06s3 0 4 .06a5.61 5.61 0 0 1 1.86.34a3.06 3.06 0 0 1 1.19.8a3.06 3.06 0 0 1 .75 1.1a5.61 5.61 0 0 1 .34 1.9c.05 1 .06 1.37.06 4s-.01 3-.06 4ZM12 6.87A5.13 5.13 0 1 0 17.14 12A5.12 5.12 0 0 0 12 6.87Zm0 8.46A3.33 3.33 0 1 1 15.33 12A3.33 3.33 0 0 1 12 15.33Z" />
+            </svg>
           </a>
 
           <a href="https://www.linkedin.com/in/sehtaj-singh-493457380" target="_blank" aria-label="LinkedIn">
-            <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
+            <svg class="social-icon" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 20 20">
+              <path fill="currentColor"
+                d="M17.04 17.043h-2.962v-4.64c0-1.107-.023-2.531-1.544-2.531c-1.544 0-1.78 1.204-1.78 2.449v4.722H7.793V7.5h2.844v1.3h.039c.397-.75 1.364-1.54 2.808-1.54c3.001 0 3.556 1.974 3.556 4.545v5.238ZM4.447 6.194c-.954 0-1.72-.771-1.72-1.72s.767-1.72 1.72-1.72a1.72 1.72 0 0 1 0 3.44Zm1.484 10.85h-2.97V7.5h2.97v9.543ZM18.521 0H1.476C.66 0 0 .645 0 1.44v17.12C0 19.355.66 20 1.476 20h17.042c.815 0 1.482-.644 1.482-1.44V1.44C20 .646 19.333 0 18.518 0h.003Z" />
+            </svg>
           </a>
         </div>
 
@@ -500,7 +532,10 @@
     <a class="contact-item" href="https://wa.me/919992715254" target="_blank">
       <div class="contact-item-flex">
         <div class="contact-left">
-          <i class="fa-brands fa-whatsapp contact-icon" aria-hidden="true"></i>
+          <svg class="footer-icon" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 432 432">
+              <path fill="currentColor"
+                d="M364.5 65Q427 127 427 214.5T364.5 364T214 426q-54 0-101-26L0 429l30-109Q2 271 2 214q0-87 62-149T214 3t150.5 62zM214 390q73 0 125-51.5T391 214T339 89.5T214 38T89.5 89.5T38 214q0 51 27 94l4 6l-18 65l67-17l6 3q42 25 90 25zm97-132q9 5 10 7q4 6-3 25q-3 8-15 15.5t-21 9.5q-18 2-33-2q-17-6-30-11q-8-4-15.5-8.5t-14.5-9t-13-9.5t-11.5-10t-10.5-10.5t-8.5-9.5t-7-8.5t-5.5-7t-3.5-5L128 222q-22-29-22-55q0-24 19-44q6-7 14-7q6 0 10 1q8 0 12 9q2 3 6 13l7 17.5l3 8.5q3 5 1 9q-3 7-5 9l-3 3l-3 3.5l-2 2.5q-6 6-3 11q13 22 30 37q13 11 43 26q7 3 11-1q12-15 17-21q4-6 12-3q6 3 36 17z" />
+            </svg>
           <span class="contact-label">WhatsApp</span>
         </div>
         <div class="contact-right">
@@ -512,7 +547,10 @@
     <a class="contact-item" href="https://www.facebook.com/SehtajM49" target="_blank">
       <div class="contact-item-flex">
         <div class="contact-left">
-          <i class="fa-brands fa-facebook contact-icon" aria-hidden="true"></i>
+           <svg class="footer-icon" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 224 432">
+              <path fill="currentColor"
+                d="M145 429H66V235H0v-76h66v-56q0-48 27-74t72-26q36 0 59 3v67l-41 1q-22 0-30 9t-8 27v49h76l-10 76h-66v194z" />
+            </svg>
           <span class="contact-label">Facebook</span>
         </div>
         <div class="contact-right">
@@ -524,7 +562,10 @@
     <a class="contact-item" href="https://www.instagram.com/sehtaj_m49/" target="_blank">
       <div class="contact-item-flex">
         <div class="contact-left">
-          <i class="fa-brands fa-instagram contact-icon" aria-hidden="true"></i>
+          <svg class="footer-icon f-insta" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24">
+              <path fill="currentColor"
+                d="M17.34 5.46a1.2 1.2 0 1 0 1.2 1.2a1.2 1.2 0 0 0-1.2-1.2Zm4.6 2.42a7.59 7.59 0 0 0-.46-2.43a4.94 4.94 0 0 0-1.16-1.77a4.7 4.7 0 0 0-1.77-1.15a7.3 7.3 0 0 0-2.43-.47C15.06 2 14.72 2 12 2s-3.06 0-4.12.06a7.3 7.3 0 0 0-2.43.47a4.78 4.78 0 0 0-1.77 1.15a4.7 4.7 0 0 0-1.15 1.77a7.3 7.3 0 0 0-.47 2.43C2 8.94 2 9.28 2 12s0 3.06.06 4.12a7.3 7.3 0 0 0 .47 2.43a4.7 4.7 0 0 0 1.15 1.77a4.78 4.78 0 0 0 1.77 1.15a7.3 7.3 0 0 0 2.43.47C8.94 22 9.28 22 12 22s3.06 0 4.12-.06a7.3 7.3 0 0 0 2.43-.47a4.7 4.7 0 0 0 1.77-1.15a4.85 4.85 0 0 0 1.16-1.77a7.59 7.59 0 0 0 .46-2.43c0-1.06.06-1.4.06-4.12s0-3.06-.06-4.12ZM20.14 16a5.61 5.61 0 0 1-.34 1.86a3.06 3.06 0 0 1-.75 1.15a3.19 3.19 0 0 1-1.15.75a5.61 5.61 0 0 1-1.86.34c-1 .05-1.37.06-4 .06s-3 0-4-.06a5.73 5.73 0 0 1-1.94-.3a3.27 3.27 0 0 1-1.1-.75a3 3 0 0 1-.74-1.15a5.54 5.54 0 0 1-.4-1.9c0-1-.06-1.37-.06-4s0-3 .06-4a5.54 5.54 0 0 1 .35-1.9A3 3 0 0 1 5 5a3.14 3.14 0 0 1 1.1-.8A5.73 5.73 0 0 1 8 3.86c1 0 1.37-.06 4-.06s3 0 4 .06a5.61 5.61 0 0 1 1.86.34a3.06 3.06 0 0 1 1.19.8a3.06 3.06 0 0 1 .75 1.1a5.61 5.61 0 0 1 .34 1.9c.05 1 .06 1.37.06 4s-.01 3-.06 4ZM12 6.87A5.13 5.13 0 1 0 17.14 12A5.12 5.12 0 0 0 12 6.87Zm0 8.46A3.33 3.33 0 1 1 15.33 12A3.33 3.33 0 0 1 12 15.33Z" />
+            </svg>
           <span class="contact-label">Instagram</span>
         </div>
         <div class="contact-right">
@@ -536,7 +577,10 @@
     <a class="contact-item" href="https://www.linkedin.com/in/sehtaj-singh-493457380" target="_blank">
       <div class="contact-item-flex">
         <div class="contact-left">
-          <i class="fa-brands fa-linkedin contact-icon" aria-hidden="true"></i>
+          <svg class="footer-icon" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 20 20">
+              <path fill="currentColor"
+                d="M17.04 17.043h-2.962v-4.64c0-1.107-.023-2.531-1.544-2.531c-1.544 0-1.78 1.204-1.78 2.449v4.722H7.793V7.5h2.844v1.3h.039c.397-.75 1.364-1.54 2.808-1.54c3.001 0 3.556 1.974 3.556 4.545v5.238ZM4.447 6.194c-.954 0-1.72-.771-1.72-1.72s.767-1.72 1.72-1.72a1.72 1.72 0 0 1 0 3.44Zm1.484 10.85h-2.97V7.5h2.97v9.543ZM18.521 0H1.476C.66 0 0 .645 0 1.44v17.12C0 19.355.66 20 1.476 20h17.042c.815 0 1.482-.644 1.482-1.44V1.44C20 .646 19.333 0 18.518 0h.003Z" />
+            </svg>
           <span class="contact-label">LinkedIn</span>
         </div>
         <div class="contact-right">
@@ -570,7 +614,7 @@
     document.getElementById("copy-year").textContent = new Date().getFullYear();
   </script>
 
-  <script src="code/head.js"></script>
+  <script src="index.js" defer></script>
 
   <script type="application/ld+json">
 {
@@ -579,6 +623,8 @@
  "name": "Sehtaj Singh",
  "url": "https://sehtaj-singh.github.io/",
  "jobTitle": "Web Developer",
+ "image": "https://sehtaj-singh.github.io/assets/test16.webp",
+ "description": "Sehtaj Singh is a web developer building modern responsive websites and applications.",
  "sameAs": [
    "https://www.linkedin.com/in/sehtaj-singh-493457380",
    "https://www.instagram.com/sehtaj_m49/",

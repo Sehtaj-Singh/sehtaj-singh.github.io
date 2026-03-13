@@ -1,0 +1,778 @@
+/* ================about============= */
+
+#about-front {
+  display: flex;
+  margin-top: 4vh;
+}
+
+.front-left {
+  width: 46.5vw;
+  margin-left: 2vw;
+  margin-right: 3vw;
+}
+
+.front-right {
+  width: 46.5vw;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.front-left img {
+  width: 100%;
+  margin-top: 1vh;
+}
+
+.front-right img {
+  width: 100%;
+}
+
+.roles-block {
+  margin-top: 1vh;
+  text-align: left;
+  height: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  overflow: hidden;
+}
+
+#type-line1 {
+  font-weight: 400;
+  line-height: 1.2;
+  display: inline-block;
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  letter-spacing: 2px;
+  font-size: 1.4rem;
+  color: #76563f;
+  white-space: nowrap;
+}
+
+#about-go {
+  display: block;
+  font-size: 1.6vh;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  text-decoration: none;
+  color: #76563f;
+  padding: 0.5vh 1.5vw;
+  border: 2px solid #76563f;
+  margin-top: 2vh;
+}
+
+#about-back {
+  width: 100vw;
+  margin-top: -17vh;
+  height: 20vh;
+  box-shadow: 3px 0px 10px #0000002f;
+  background: radial-gradient(circle, #fffaf4 0%, #fff7ef 60%, #fff3e8 100%);
+}
+
+.about-pro {
+  margin-top: 4vh;
+}
+
+#about-max {
+  display: flex;
+  gap: 6vw;
+  margin-top: 7vh;
+}
+
+.about-pro-tag {
+  width: 40vw;
+}
+
+.about-pro-tag h3,
+.about-pro-tag h2 {
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  font-weight: 400;
+  letter-spacing: 2px;
+  text-align: end;
+  font-size: 4vh;
+  margin-bottom: 1.5vh;
+  color: #76563f;
+}
+
+.about-pro-tag h1 {
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  font-weight: 600;
+  text-align: end;
+  letter-spacing: 2px;
+  font-size: 6vh;
+  color: #76563f;
+}
+
+.about-pro-para {
+  width: 45vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.about-pro-para p {
+  font-size: 13px;
+  text-align: left;
+  font-family: "Inika", serif;
+}
+
+#about-go-para {
+  font-size: 1.5vh;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  text-decoration: none;
+  padding: 0.5vh 1vw;
+  background: linear-gradient(135deg, #e2c7ac 0%, #a97855 100%);
+  color: #fff;
+  letter-spacing: 1px;
+  margin-top: 2vh;
+  margin-bottom: 1vh;
+}
+
+.about-down {
+  width: 80vw;
+  border-top: 1px solid #4c4742;
+  margin-left: 10vw;
+  margin-top: 7vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 2vh;
+  margin-bottom: 5vh;
+}
+
+.about-down h2 {
+  margin-top: 2vh;
+  text-align: center;
+  font-size: 2.5vh;
+  font-family: "Inter", sans-serif;
+  color: #4c4742;
+  line-height: 1.4;
+}
+
+.about-down i {
+  font-size: 3vh;
+  color: #4c4742;
+}
+
+/* service section */
+
+#service {
+  width: 100vw;
+  background-color: #ffffff;
+}
+
+.section-one {
+  display: flex;
+  width: 100vw;
+  margin-top: 2vh;
+}
+
+#one-A {
+  background: url("./assets/about18.webp") center/cover no-repeat;
+  width: 52vw;
+  aspect-ratio: 3006/3007;
+}
+
+.section-two {
+  display: flex;
+  width: 100vw;
+  margin-top: 2vh;
+}
+
+#one-B {
+  background: url("./assets/about27.webp") center/cover no-repeat;
+  width: 52vw;
+  aspect-ratio: 3006/3007;
+}
+
+.A-para,
+.B-para {
+  width: 48vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.B-para h3 {
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  font-size: 3.5vh;
+  text-align: center;
+  letter-spacing: 1px;
+  margin-top: 4vh;
+  margin-bottom: 1.5vh;
+  color: #4c4742;
+}
+.A-para h3 {
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  font-size: 3.5vh;
+  text-align: center;
+  letter-spacing: 1px;
+  margin-top: 3vh;
+  margin-bottom: 1.5vh;
+  color: #4c4742;
+}
+
+.A-para p {
+  text-align: center;
+  font-family: "Inika", serif;
+  width: 45vw;
+  font-size: 13px;
+}
+
+.B-para p {
+  text-align: center;
+  font-family: "Inika", serif;
+  width: 43vw;
+  font-size: 13px;
+}
+
+.section-three {
+  background:
+    linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0)),
+    url("./assets/about34.webp") center/cover no-repeat;
+  width: 100vw;
+  aspect-ratio: 4608/2602;
+  margin-top: 4vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.section-three h3 {
+  text-align: center;
+  font-size: 4vh;
+  color: #ffffff;
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  letter-spacing: 3px;
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+  #type-line1 {
+    font-size: 2.8rem;
+    line-height: 1.2;
+  }
+  .roles-block {
+    height: 2.8rem;
+  }
+  #about-go {
+    font-size: 2vh;
+  }
+  .about-pro-tag h3,
+  .about-pro-tag h2 {
+    font-size: 5vh;
+  }
+  .about-pro-tag h1 {
+    font-size: 7vh;
+  }
+  .about-pro-para {
+    width: 30vw;
+  }
+  .about-pro-para p {
+    font-size: 24px;
+    width: 40vw;
+  }
+  #about-go-para {
+    font-size: 2vh;
+    padding: 0.7vh 0.5vw;
+  }
+
+  .about-down h2 {
+    font-size: 3vh;
+  }
+  .A-para h3,
+  .B-para h3 {
+    font-size: 4.5vh;
+    margin-top: 5vh;
+  }
+  .A-para p {
+    font-size: 24px;
+    width: 40vw;
+    margin-left: 2vw;
+    margin-top: 2vh;
+  }
+  .B-para p {
+    font-size: 24px;
+    width: 40vw;
+    margin-top: 2vh;
+  }
+  .section-three h3 {
+    font-size: 5vh;
+  }
+}
+
+/* Laptop / Desktop */
+@media (min-width: 1024px) {
+  .roles-block {
+    height: 2.8rem;
+    font-size: 14px;
+  }
+  #about {
+    display: flex;
+    margin-bottom: 15vh;
+  }
+  #about-first {
+    width: 50vw;
+  }
+  #about-back {
+    width: 52vw;
+  }
+  .about-pro {
+    width: 35vw;
+    margin-left: 5vw;
+  }
+
+  #type-line1 {
+    font-size: 2.6rem;
+    line-height: 1.2;
+    letter-spacing: 3px;
+  }
+  #about-go-para {
+    width: 15vw;
+  }
+  #about-max {
+    margin-top: 2vh;
+  }
+
+  .about-pro-para p {
+    width: 25vw;
+    font-size: 26px;
+  }
+  #about-max {
+    width: 40vw;
+  }
+  .about-pro-tag h3,
+  .about-pro-tag h2 {
+    width: 10vw;
+    font-size: 5vh;
+  }
+  .about-pro-tag h1 {
+    width: 10vw;
+    font-size: 7vh;
+  }
+  .about-pro-tag {
+    width: 10vw;
+  }
+  .about-down {
+    width: 40vw;
+    margin-left: 0vw;
+    margin-bottom: 0;
+  }
+  .about-down h2 {
+    width: 30vw;
+  }
+
+  /* ========service====== */
+  #service-images {
+    display: flex;
+    gap: 2.5vw;
+  }
+  .section-one,
+  .section-two {
+    width: 50vw;
+  }
+  #one-A {
+    width: 25vw;
+  }
+  #one-B {
+    width: 25vw;
+  }
+  .A-para,
+  .B-para {
+    width: 22vw;
+  }
+  .B-para {
+    margin-left: 2vw;
+  }
+  .A-para p,
+  .B-para p {
+    width: 21vw;
+    font-size: 26px;
+  }
+  .section-two {
+    flex-direction: row-reverse;
+    margin-right: 3vw;
+  }
+  .A-para h3,
+  .B-para h3 {
+    font-size: 6.5vh;
+  }
+
+  .section-three {
+    aspect-ratio: auto;
+    height: 80vh;
+    background-position: top;
+    width: 90vw;
+    margin-left: 5vw;
+    margin-top: 15vh;
+  }
+  .section-three h3 {
+    font-size: 8vh;
+  }
+}
+
+
+/* ===================skilll============ */
+
+.ui-card {
+  width: 88vw;
+  border-radius: 20px;
+  padding: 3vw;
+  margin-bottom: 4vh;
+  margin-left: 3vw;
+  overflow: hidden;
+  border: 1px solid #3e3c3a81;
+  box-shadow: rgba(100, 100, 111, 0.2) 1px 7px 20px 0px;
+  position: relative;
+}
+
+.top-section {
+  position: relative;
+  width: 100%;
+  background-color: #f5f7f8;
+  padding-top: 10vh;
+  padding-bottom: 3vh;
+  z-index: 3;
+  -webkit-clip-path: url(#custom-notch-clip);
+  clip-path: url(#custom-notch-clip);
+}
+
+.top-section h3 {
+  font-family: "Inter", sans-serif;
+  text-align: center;
+  font-size: 2.2vh;
+  width: 80%;
+  margin-left: 10%;
+  color: #0d1e2b77;
+  margin-bottom: 3vh;
+}
+
+#border {
+  position: absolute;
+  top: 4vh;
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  z-index: 5;
+  font-size: 4vh;
+  letter-spacing: 4px;
+  left: 10vw;
+  color: #0a3d62;
+}
+
+.logos {
+  position: absolute;
+  top: 2vh;
+  right: 7vw;
+  display: flex;
+  gap: 5vw;
+}
+
+.top-section .logos img {
+  width: 10vw;
+}
+
+/* work links */
+
+.bottom-head {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bottom-head h3 {
+  padding-top: 2vh;
+  padding-bottom: 1vw;
+  text-align: center;
+  font-family: "Oswald", sans-serif;
+  width: 70%;
+  color: #0a3d62;
+  font-size: 3vh;
+  border-bottom: 1px solid #3e3c3a81;
+  letter-spacing: 1px;
+}
+
+.go-work {
+  display: flex;
+  gap: 8vw;
+  justify-content: center;
+  margin-top: 2vh;
+}
+
+.work-item {
+  text-align: center;
+  text-decoration: none;
+  color: #4c4742;
+  font-family: "Inika", serif;
+  font-size: 2vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition:
+    transform 0.25s ease,
+    opacity 0.25s ease;
+}
+
+.work-item img {
+  width: 9vw;
+  height: auto;
+  margin-bottom: 1vh;
+  transition: transform 0.25s ease;
+}
+
+.work-item:hover img {
+  transform: scale(1.1);
+}
+
+.work-item:hover {
+  transform: translateY(-3px);
+  opacity: 0.9;
+}
+
+/* skill rows */
+
+.skill-row {
+  padding-left: 4vw;
+  padding-right: 4vw;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  max-width: 720px;
+  margin: 15px 0;
+  font-family: "Inika", serif;
+}
+
+.skill-logo {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 44px;
+}
+
+.skill-logo img {
+  width: 9vw;
+}
+
+.skill-meta {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+.skill-name {
+  font-weight: 700;
+  font-size: 14px;
+  color: #222;
+  margin-bottom: 8px;
+  letter-spacing: 0.6px;
+}
+
+.skill-progress-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.skill-percent {
+  min-width: 38px;
+  text-align: right;
+  font-weight: 600;
+  color: #333;
+  font-size: 15px;
+}
+
+.skill-progress {
+  --height: 10px;
+  --val: 0;
+  --start-color: #18a3ff;
+  --end-color: #4ad3ff;
+  --shadow-color: rgba(24, 163, 255, 0.18);
+
+  position: relative;
+  flex: 1 1 auto;
+  height: var(--height);
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.06), rgba(0, 0, 0, 0.03));
+  border-radius: calc(var(--height) / 2);
+  overflow: visible;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.45);
+}
+
+.skill-progress::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: calc(var(--val) * 1%);
+  border-radius: calc(var(--height) / 2);
+  background: linear-gradient(90deg, var(--start-color), var(--end-color));
+  box-shadow:
+    0 4px 14px var(--shadow-color),
+    inset 0 1px 0 rgba(255, 255, 255, 0.35);
+  transition: width 150ms linear;
+  will-change: width;
+}
+
+/* smaller variant */
+
+.skill-row.small .skill-logo {
+  width: 36px;
+  height: 36px;
+  border-radius: 6px;
+}
+
+.skill-row.small .skill-name {
+  font-size: 13px;
+}
+
+.skill-row.small .skill-percent {
+  font-size: 12px;
+}
+
+.skill-row.small .skill-progress {
+  --height: 8px;
+}
+
+/* color themes */
+
+.skill-row.html-skill .skill-progress {
+  --start-color: #18a3ff;
+  --end-color: #4ad3ff;
+  --shadow-color: rgba(24, 163, 255, 0.25);
+}
+
+.skill-row.css-skill .skill-progress {
+  --start-color: #a96bff;
+  --end-color: #e07bff;
+  --shadow-color: rgba(169, 107, 255, 0.35);
+}
+
+.skill-row.js-skill .skill-progress {
+  --start-color: #ffb347;
+  --end-color: #ffcc33;
+  --shadow-color: rgba(255, 179, 71, 0.35);
+}
+
+.skill-row.react-skill .skill-progress {
+  --start-color: #32d5c4;
+  --end-color: #5af2cf;
+  --shadow-color: rgba(50, 213, 196, 0.3);
+}
+
+.skill-row.backend-node .skill-progress {
+  --start-color: #ff4b4b;
+  --end-color: #ff7a6f;
+  --shadow-color: rgba(255, 75, 75, 0.35);
+}
+
+.skill-row.backend-express .skill-progress {
+  --start-color: #ffb347;
+  --end-color: #ffcc33;
+  --shadow-color: rgba(255, 179, 71, 0.35);
+}
+
+.skill-row.backend-mongo .skill-progress {
+  --start-color: #3a46b8;
+  --end-color: #606eee;
+  --shadow-color: rgba(58, 70, 184, 0.35);
+}
+
+.skill-row.backend-api .skill-progress {
+  --start-color: #a96bff;
+  --end-color: #e07bff;
+  --shadow-color: rgba(169, 107, 255, 0.35);
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+  .ui-card {
+    width: 84vw;
+    margin-left: 5vw;
+  }
+  .top-section .logos img {
+    width: 6vw;
+  }
+  .top-section h3 {
+    font-size: 2.4vh;
+    width: 70%;
+    margin-left: 15%;
+  }
+  .skill-row {
+    gap: 32px;
+    padding-left: 6vw;
+    margin: 30px 0;
+    padding-right: 6vw;
+  }
+  .skill-logo img {
+    width: 5vw;
+  }
+  .skill-progress-wrapper {
+    gap: 5vw;
+  }
+  .skill-name {
+    font-size: 20px;
+  }
+  .skill-percent {
+    font-size: 20px;
+  }
+  .work-item img {
+    width: 5vw;
+  }
+}
+
+/* Laptop / Desktop */
+@media (min-width: 1024px) {
+  .ui-card{
+    width: 40vw;
+  }
+  #skill-row-desk {
+    display: flex;
+  }
+  .top-section .logos img {
+    width: 3vw;
+  }
+  .skill-logo img {
+    width: 2.5vw;
+  }
+  .logos {
+    right: 5vw;
+    display: flex;
+    gap: 3vw;
+  }
+  .top-section h3{
+    margin-top: 4vh;
+    font-size: 3vh;
+  }
+
+  #border {
+    top: 9vh;
+    font-size: 5vh;
+    left: 6vw;
+  }
+  .work-item img {
+    width: 3vw;
+  }
+  .skill-row {
+    gap: 32px;
+    margin: 45px 0;
+  }
+  .skill-progress-wrapper {
+    gap: 2vw;
+  }
+  .top-section {
+    padding-top: 12vh;
+  }
+  .go-work {
+    margin-top: 3vh;
+  }
+  .skill-name {
+    font-size: 24px;
+  }
+  .skill-percent {
+    font-size: 24px;
+  }
+  .bottom-head h3{
+     font-size: 4vh;
+     margin-top: 4vh;
+  }
+}
