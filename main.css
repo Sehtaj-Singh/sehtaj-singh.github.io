@@ -724,6 +724,7 @@
 @media (min-width: 1024px) {
   .ui-card{
     width: 40vw;
+    margin-left: 2.5vw;
   }
   #skill-row-desk {
     display: flex;
