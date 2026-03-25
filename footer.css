@@ -162,6 +162,9 @@
 }
 #status {
    font-size: 2.5vh;
+   padding: 0.7vh 1vw;
+   gap: 1.5vw;
+
 }
 #project-section {
   margin-bottom: 12vh;
