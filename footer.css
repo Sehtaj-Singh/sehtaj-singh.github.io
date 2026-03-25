@@ -46,6 +46,8 @@
   font-weight: 600;
 }
 
+
+
 .project-data p {
   font-size: 14px;
   font-family: "Inika", serif;
@@ -79,11 +81,18 @@
 #status {
   letter-spacing: 1px;
   font-size: 1.8vh;
+  display: flex;
+  gap: 3vw;
   padding: 0.7vh 3vw;
-   background: linear-gradient(135deg, #34d399, #059669);
-  color: #fff;
+  border: 1px solid #1c1c1c;
+  color: #1c1c1c;
   border-radius: 14px;
   font-family: "Inika", serif;
+}
+
+.visit{
+ height: 18px;
+ width: 18px;
 }
 
 /* Tablet */
